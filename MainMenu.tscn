@@ -1,0 +1,90 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Start.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Background_2.png" type="Texture" id=2]
+[ext_resource path="res://Planeteer_Reaction.wav" type="AudioStream" id=3]
+[ext_resource path="res://MainMenu.gd" type="Script" id=4]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 5.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="Button" parent="."]
+margin_left = 3.0
+margin_top = 310.0
+margin_right = 203.0
+margin_bottom = 360.0
+text = "Start"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 1.78186
+margin_top = 384.0
+margin_right = 204.782
+margin_bottom = 434.0
+text = "Contunue"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 0.588608
+margin_top = 464.866
+margin_right = 203.589
+margin_bottom = 514.866
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 243.106
+margin_top = 74.2413
+margin_right = 1079.11
+margin_bottom = 290.241
+rect_scale = Vector2( 5, 5 )
+rect_clip_content = false
+bbcode_enabled = true
+bbcode_text = "[wave] Into the Abyss"
+text = " Into the Abyss"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background_2" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 337.981, 343.136 )
+texture = ExtResource( 2 )
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 836.355
+margin_top = 499.687
+margin_right = 1037.36
+margin_bottom = 716.687
+rect_clip_content = false
+bbcode_enabled = true
+bbcode_text = "[wave]WASD to move
+
+Click to shoot
+
+More features soon"
+text = "WASD to move
+
+Click to shoot
+
+More features soon"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
